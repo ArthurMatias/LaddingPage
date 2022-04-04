@@ -1,0 +1,155 @@
+@keyframes animação{
+    0% {background-color: #252525;}
+    50% {background-color: #424242;}
+    100% {background-color: #252525;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    background: linear-gradient(65deg, #ffffff 43%, #000000 43%);
+    background-repeat: no-repeat;
+    height: 757px;
+}
+
+.principal section{
+    display: flex;
+}
+
+.bemvindo {
+    font-family: gotham black;
+    color: #939292;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.7em 0em 0em 0.5em;
+    font-size: 110px;
+}
+
+.bemvindo p {
+    font-size: 80px;
+}
+
+.titulos {
+    display: flex;           /*deixa flexivel*/
+    flex-wrap: wrap;         /* não deixa passar da box*/
+    max-width: 550px;        /*largura maxima da box*/
+}
+
+.cadastro {
+    display: flex;
+    font-family: gotham black;
+    color: black;
+    font-size: 34px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2em 0em 0em 2.1em;
+}
+
+.cabeçalho {
+    background-color: black;
+    animation: animação;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    width: 1600px;
+    height: 90px;
+    top: -20px;
+}
+
+#nav1 {
+    display: flex;
+    gap: 170px;
+    height: 10px;
+}
+
+#nav2 {
+    display: flex;
+    gap: 170px;
+    height: 10px;
+}
+
+#logo {
+    position: absolute;
+    top: 25px;
+}
+
+#cabeçalho-itens {
+    font-family: open sans;
+    color: #fff;
+    font-size: 20px;
+}
+
+.input input [type="text"] input [type="email"] input [type="password"] {
+    bottom: auto;
+}
+
+input {
+    border: 2px solid #939292;
+    display: flex;
+    align-items: row;
+    border-radius: 20px;
+    width: 450px;
+    height: 40px;
+    outline: none;
+    margin-top: 3px;
+}
+
+.box-inputs {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 1.1em 0em 0em 4.2em;
+    gap: 10px 0px;
+}
+
+.botão {
+    background-color: black;
+    color: white;
+    width: 450px;
+    height: 40px;
+    font-family: gotham black;
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 6em 0em 0 0em 0em;
+}
+
+.botão2 {
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 40px;
+    font-family: gotham black;
+    font-size: 19px;
+    border-radius: 20px;
+}
+
+.box-botão2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img {
+    display: flex;
+    width: 1000px;
+    margin-top: 110px;
+}
+
+.caixa2 {
+    display: flex;
+}
+.box-inputs ::placeholder {
+    padding: 0em 0em 0em 1.5em;
+}
